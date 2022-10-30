@@ -76,7 +76,8 @@ button {
     cursor: pointer;
 }
 
-.button:hover {
+.button,
+.edit:hover {
     color: #3a3A3a;
 }
 
