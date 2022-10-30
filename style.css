@@ -116,7 +116,7 @@ button {
     margin: 0 0 20px;
 }
 
-.input .task {
+ input .task {
     width: 318px;
 }
 
@@ -142,7 +142,7 @@ button {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 56%;
+    
     display: inline-block;
     flex-grow: 1;
 }
@@ -168,15 +168,15 @@ button {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.ul .li .input[type=text] {
     display: none;
 }
 
-.ul .li.editMode .input[type=text] {
+.ul .li.edit-mode .input[type=text] {
     display: inline-block;
-    width: 224px;
+    width: 336px;
 }
 
-ul li.editMode label {
+.ul .li.edit-mode .label {
     display: none;
 }
