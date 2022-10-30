@@ -125,21 +125,20 @@ button {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.li  * {
+.li * {
     vertical-align: middle;
 }
 
-.li  .checkbox[type="checkbox"] {
+.li .checkbox[type="checkbox"] {
     margin: 0 10px;
 }
 
-.li  .label {
+.li .label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -148,7 +147,7 @@ button {
     flex-grow: 1;
 }
 
-.li     .input[type="text"] {
+.li .input[type="text"] {
     width: 226px;
 }
 
@@ -163,7 +162,7 @@ button {
 }
 
 /* Completed */
-.ul#completed .label {
+.ul.completed .label {
     text-decoration: line-through;
     color: #888;
 }
