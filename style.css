@@ -44,8 +44,8 @@
     display: flex;
 }
 
-#incomplete,
-#completed {
+.incomplete,
+.completed {
     margin: 0;
     padding: 0px;
 }
