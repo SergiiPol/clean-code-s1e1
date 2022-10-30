@@ -22,8 +22,9 @@
 
 @media (max-width:768px) {
 
-.header { text-align: center;
-}
+.header {
+    text-align: center;
+  }
 
 }
 
@@ -43,16 +44,20 @@
     display: flex;
 }
 
-#incomplete, #completed {
+#incomplete,
+#completed {
     margin: 0;
     padding: 0px;
 }
 
-.li-incomplete, .li-completed .h3 {
+.li-incomplete, 
+.li-completed 
+.h3 {
     list-style: none;
 }
 
-input, button{
+input, 
+button{
     outline: none;
 }
 
@@ -61,7 +66,9 @@ button {
     border: 0px;
 }
 
-.button, .edit, .delete{
+.button, 
+.edit, 
+.delete{
     color: #888;
     font-size: 15px;
     width: 60px;
