@@ -7,6 +7,7 @@
                 type="text/css">
         <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
     </head>
+    
     <body class="body">
         <header class="header">
             <img class="header__img" src="./eisenhower-matrix.jpg" alt="">
@@ -16,18 +17,16 @@
         </header>
         <main class="task-wrapper">
             <section>
-                <p>
-                    <label class="label" for="new-task">Add Item</label>
-                    <div class="task-row-wrapper">
-                        <input class="input task new-task" type="text">
-                        <button class="button add-button">Add</button>
-                    </div>
-                </p>
+                <label class="label" for="new-task">Add Item</label>
+                <div class="task-row-wrapper">
+                    <input class="input task new-task" type="text">
+                    <button class="button add-button">Add</button>
+                </div>
             </section>
             <section>
                 <h3 class="h3">Todo</h3>
-                <ul class="ul incomplete">
-                    <li class="li li-incomplete">
+                <form onsubmit="return false;" action="#" class="ul incomplete">
+                    <div class="li li-incomplete">
                         <input class="input checkbox" type="checkbox">
                         <label class="label task">Pay Bills</label>
                         <input type="text" class="task input">
@@ -35,8 +34,8 @@
                         <button class="button delete">
                             <img class="img-remove" src="./remove.svg" alt="remove symbol">
                         </button>
-                    </li>
-                    <li class="li edit-mode">
+                    </div>
+                    <div class="li edit-mode">
                         <input class="input checkbox" type="checkbox">
                         <label class="label">Go Shopping</label>
                         <input type="text" value="Go Shopping" class="task input">
@@ -44,13 +43,13 @@
                         <button class="button delete">
                             <img class="img-remove" src="./remove.svg" alt="remove symbol">
                         </button>
-                    </li>
-                </ul>
+                    </div>
+                </form>
             </section>
             <section>
                 <h3 class="h3">Completed</h3>
-                <ul class="completed ul">
-                    <li class="li li-completed">
+                <form onsubmit="return false;" action="#" class="completed ul">
+                    <div class="li li-completed">
                         <input class="input checkbox" type="checkbox" checked>
                         <label class="label task">See the Doctor</label>
                         <input type="text" class="input task">
@@ -58,8 +57,8 @@
                         <button class="button delete">
                             <img class="img-remove" src="./remove.svg" alt="remove symbol">
                         </button>
-                    </li>
-                </ul>
+                    </div>
+                </form>
             </section>
         </main>
         <script src="app.js"></script>
