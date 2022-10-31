@@ -10,14 +10,14 @@
 
 var taskInput=document.querySelector(".new-task");//Add a new task.
 var addButton=document.querySelector(".add-button");//first button
-var incompleteTaskHolder=document.querySelector(".incomplete");//ul of #incompleteTasks
+var incompleteTaskHolder=document.querySelector(".incomplete");//form of #incompleteTasks
 var completedTasksHolder=document.querySelector(".completed");//completed-tasks
 
 
 //New task list item
 var createNewTaskElement=function(taskString){
 
-    var listItem=document.createElement("li");
+    var listItem=document.createElement("form-wrapper");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -52,7 +52,7 @@ var createNewTaskElement=function(taskString){
 
 
     //and appending.
-    listItem.className="li";
+    listItem.className="form-wrapper";
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
     listItem.appendChild(editInput);
@@ -112,9 +112,9 @@ var deleteTask=function(){
     console.log("Delete Task...");
 
     var listItem=this.parentNode;
-    var ul=listItem.parentNode;
-    //Remove the parent list item from the ul.
-    ul.removeChild(listItem);
+    var form=listItem.parentNode;
+    //Remove the parent list item from the form.
+    form.removeChild(listItem);
 
 }
 
@@ -172,7 +172,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     checkBox.onchange=checkBoxEventHandler;
 }
 
-//cycle over incompleteTaskHolder ul list items
+//cycle over incompleteTaskHolder form list items
 //for each list item
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
@@ -183,7 +183,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 
 
-//cycle over completedTasksHolder ul list items
+//cycle over completedTasksHolder form list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
